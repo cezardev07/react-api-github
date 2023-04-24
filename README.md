@@ -15,13 +15,6 @@
     cd react-api-github
     npm run dev
 
-
-<p>
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
-
-
 <br>
 
 <h2>PROJETO <strong>REACT</strong> CRIADO COM FOCO EM ESTUDAR:</h2>
