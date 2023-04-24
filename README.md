@@ -40,7 +40,7 @@ import styled from 'styled-components'
 
 export const Button = styled.button`
     cursor: pointer;
-    backgraund: ${ props => langRepo.props === "JavaScript" 
+    backgraund: ${ props => props.lang === "JavaScript" 
         ? "#f1e05a"
         : "red"
     };
