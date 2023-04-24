@@ -10,10 +10,15 @@ const Header = () => {
 
   useEffect(() => {
       const get = async (end_point) => {
-        const res = await fetch(end_point)
-        const data = await res.json()
-        setLinkPerfil(data[0].owner.html_url)
-        setLinkImg(data[0].owner.avatar_url)
+        try {
+          const res = await fetch(end_point)
+          const data = await res.json()
+          
+          setLinkPerfil(data[0].owner.html_url)
+          setLinkImg(data[0].owner.avatar_url)
+        } catch (error) {
+          console.log(error)
+        }
       }
       get(ApiGitHub)
   },[])
