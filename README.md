@@ -30,56 +30,56 @@
 - <strong>Components REACT:</strong>
  
 ```js
-    import Component from "./../"
-        
-    const App = () => {
-        return(
-            <>
-                </Component>
-            </>
-        )
-    }
-    export default App
+import Component from "./../"
+    
+const App = () => {
+    return(
+        <>
+            </Component>
+        </>
+    )
+}
+export default App
 ```
 - <strong>Style Components REACT:</strong>
 ```js
-    import styled from 'styled-components'
+import styled from 'styled-components'
 
-    export const Button = styled.button`
-        cursor: pointer;
-        backgraund: ${ props => langRepo.props === "JavaScript" 
-            ? "#f1e05a"
-            : "red"
-        };
-    `
+export const Button = styled.button`
+    cursor: pointer;
+    backgraund: ${ props => langRepo.props === "JavaScript" 
+        ? "#f1e05a"
+        : "red"
+    };
+`
 ```
 
 - <strong>Hooks, useEffect e useState REACT:</strong>
 ```js
-    import { useEffect, useState } from "react";
-    
-    const [items, setItems] = useState([])
+import { useEffect, useState } from "react";
 
-    useEffect(() => {
-        setItems()
-    },[])
+const [items, setItems] = useState([])
+
+useEffect(() => {
+    setItems()
+},[])
 ```
 
 - <strong>Requisição assincrona REACT:</strong>
 ```js
-    useEffect(() => {
-        const get = async (ApiKey) => {
-            try{
-                const response = fetch(Apikey)
-                const data = await response.json()
-                
-                setItems(data)
-            } catch(error){
-                console.log(error)
-            }
+useEffect(() => {
+    const get = async (ApiKey) => {
+        try{
+            const response = fetch(Apikey)
+            const data = await response.json()
+            
+            setItems(data)
+        } catch(error){
+            console.log(error)
         }
-        get(ApiKey)
-    },[])
+    }
+    get(ApiKey)
+},[])
 ```
 
 - <strong>API GITHUB:</strong>
