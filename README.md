@@ -1,6 +1,6 @@
 ### clone repositorio
 
-git clone "https://github.com/cezardev07/react-api-github.git"
+git clone https://github.com/cezardev07/react-api-github.git
 
 ### dependencias
 
