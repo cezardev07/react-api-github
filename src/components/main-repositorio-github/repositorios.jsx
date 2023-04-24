@@ -19,10 +19,14 @@ const repoGITHUB = () => {
     useEffect(() => {
 
         const getApi = async (api) => {
-            const res = await fetch(api)
-            const data = await res.json()
+            try {
+                const res = await fetch(api)
+                const data = await res.json()
 
-            setRepositorios(data)  
+                setRepositorios(data)
+            } catch (error) {
+                console.log(error)
+            }  
         }
 
         getApi(ApiGitHub)
