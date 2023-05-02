@@ -63,7 +63,7 @@ useEffect(() => {
 useEffect(() => {
     const get = async (ApiKey) => {
         try{
-            const response = fetch(Apikey)
+            const response = await fetch(Apikey)
             const data = await response.json()
             
             setItems(data)
